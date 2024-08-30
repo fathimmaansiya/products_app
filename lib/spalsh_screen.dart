@@ -13,7 +13,7 @@ class _SpalshScreenState extends State<SpalshScreen> {
   
   Widget build(BuildContext context) {
     return  Scaffold(
-      body:   ,
+      body:Text("haii")   ,
     );
   }
 }
