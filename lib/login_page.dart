@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_3/page_1.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
@@ -25,10 +26,15 @@ class LoginPage extends StatelessWidget {
              border: OutlineInputBorder(borderRadius: BorderRadius.circular(20)),
              hintText: "Password",
              prefixIcon:const Icon(Icons.password),
-             suffixIcon: Icon(Icons.remove_red_eye_outlined)
+             suffixIcon: Icon(Icons.remove_red_eye_outlined),
               ),
+              obscureText: true,
               
             ),
+            ElevatedButton(onPressed: (){
+              Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context)=> Page1()));
+            }, child: Text("login"),),
+            // TextButton(onPressed:(){}, child: Text("sign up"))
           ],
         ),
       ),
